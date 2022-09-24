@@ -12,6 +12,8 @@ login-container{
 .row{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: space-evenly;    
 
 }
 
@@ -62,4 +64,13 @@ login-container{
     color: #0062cc;
     font-weight: 600;
     text-decoration: none;
+}
+
+@media screen and (max-width: 780px) {
+    .row {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin: 3rem;
+    }
+    
 }
